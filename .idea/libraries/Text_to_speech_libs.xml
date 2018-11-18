@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Text-to-speech libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Text-to-speech libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../Text-to-speech libs" recursive="false" />
+  </library>
+</component>

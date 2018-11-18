@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="parentMainScene" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPackages.MainScene.Controller">
+   <children>
+      <AnchorPane id="mainScene">
+         <children>
+            <TextField fx:id="searchField" layoutX="172.0" layoutY="161.0" prefHeight="30.0" prefWidth="400.0" promptText="Enter your word..." />
+            <Button fx:id="search_Button" layoutX="332.0" layoutY="211.0" mnemonicParsing="false" prefWidth="80.0" text="Search" />
+            <Button fx:id="refresh_Button" layoutX="577.0" layoutY="161.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="Refresh" />
+            <TextArea fx:id="translate_field" layoutX="20.0" layoutY="254.0" prefHeight="330.0" prefWidth="760.0" visible="false" />
+            <Button layoutX="20.0" layoutY="64.0" mnemonicParsing="false" onAction="#initialize_addButton" prefHeight="20.0" prefWidth="80.0" text="Add More" />
+            <Button layoutX="20.0" layoutY="105.0" mnemonicParsing="false" onAction="#initialize_replaceButton" prefHeight="25.0" prefWidth="80.0" text="Replace " />
+            <Button layoutX="20.0" layoutY="149.0" mnemonicParsing="false" onAction="#initialize_deleteButton" prefHeight="25.0" prefWidth="80.0" text="Delete" />
+            <Button fx:id="pronounceButton" layoutX="20.0" layoutY="190.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Pronounce" />
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="menuHamburger" layoutX="20.0" layoutY="20.0" prefHeight="25.0" prefWidth="30.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" direction="RIGHT" layoutX="623.0" prefHeight="600.0" prefWidth="177.0" />
+   </children>
+</AnchorPane>
